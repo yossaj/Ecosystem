@@ -22,4 +22,13 @@ class TestBear < MiniTest::Test
     assert_equal(1,@bear.belly.count)
   end
 
+  def test_bear_can_roar
+    assert_equal("raaaawwwwr",@bear.roar)
+  end
+
+  def test_bear_knows_how_many_fish_it_has_eaten
+    @bear1= Bear.new("Yogi", "Grizzly",['catfish','small salmon'])
+    assert_equal("I have eaten 2 fish! 2 yummy fish!", @bear1.ate_fish)
+  end
+
 end
