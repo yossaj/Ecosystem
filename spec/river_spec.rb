@@ -21,4 +21,9 @@ class TestRiver < MiniTest::Test
     assert_equal(3,@river.fish.count)
   end
 
+
+  def test_fish_have_spawned
+    @river.spawnfish
+    assert_equal(7, @river.fish.count)
+  end
 end

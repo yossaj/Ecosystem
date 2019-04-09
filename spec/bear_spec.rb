@@ -31,4 +31,5 @@ class TestBear < MiniTest::Test
     assert_equal("I have eaten 2 fish! 2 yummy fish!", @bear1.ate_fish)
   end
 
+
 end

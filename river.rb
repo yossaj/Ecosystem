@@ -8,4 +8,10 @@ class River
     @fish = fish
   end
 
+  def spawnfish
+    if fish.count <= 4
+      fish.push('small salmon','small salmon', 'small salmon')
+    end
+  end
+
 end
